@@ -1,5 +1,7 @@
 package tacos;
 
+import java.util.Collections;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,6 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TacoCloudApplication {
 
 	public static void main(String[] args) {
+		SpringApplication app = new SpringApplication(TacoCloudApplication.class);
+        app.setDefaultProperties(Collections
+          .singletonMap("server.port", System.getenv("PORT") ));
 		SpringApplication.run(TacoCloudApplication.class, args);
 	}
 
