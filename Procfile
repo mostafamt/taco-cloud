@@ -1,1 +1,1 @@
-web: java -jar target/*.jar
+web: SERVER_PORT=8080 java -jar target/*.jar
