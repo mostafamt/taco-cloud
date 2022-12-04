@@ -5,6 +5,7 @@
 
 # Taco Cloud
 <b>Description: </b>A Simple MVC spring application.<br/>
+https://spring-boot.osc-fr1.scalingo.io/
 <br />
 
 ## Dependencies
